@@ -13,8 +13,6 @@ export default async function handler(req, res) {
         { role: "user", content: req.body.userContent },
       ],
     });
-
-    console.log(response);
     const result = response.choices[0].message.content;
     res.status(200).json({ text: result });
   } catch (error) {
