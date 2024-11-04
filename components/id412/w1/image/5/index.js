@@ -42,7 +42,7 @@ export default function ImageDisplay() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setLayers(generateLayers());
-    }, 40); // Change composition every 3 seconds
+    }, 400); // Change composition every 3 seconds
 
     return () => clearInterval(intervalId);
   }, []);

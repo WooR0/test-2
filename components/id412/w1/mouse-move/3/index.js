@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import * as S from "./styles";
 import useResize from "utils/hooks/useResize";
 
-const KAONASHI_COUNT = 12;
-const SPEED = 0.93;
+const KAONASHI_COUNT = 10;
+const SPEED = 0.99;
 export default function MouseMoveVisual() {
   const containerRef = useRef(null);
   const [windowWidth, windowHeight] = useResize();
@@ -71,7 +71,7 @@ export default function MouseMoveVisual() {
         <S.KaonashiImage
           key={index}
           ref={(el) => (kaonashisRef.current[index] = el)}
-          src="/assets/id412/w1/mouse-move/1.png"
+          src="/assets/id412/w1/mouse-move/Flower.png"
           alt={`Kaonashi ${index + 1}`}
           style={{
             zIndex: KAONASHI_COUNT - index,
